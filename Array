@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class Activity3 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int[] values = new int[5];
+
+        for (int index = 0; index < values.length; index++) {
+            values[index] = input.nextInt();
+        }
+
+        for (int value : values) {
+            System.out.println(value);
+        }
+    }
+}
