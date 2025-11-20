@@ -1,0 +1,32 @@
+class Person {
+    private String fullName;  // changed from 'name'
+    
+    public void setFullName(String n) { 
+        fullName = n; 
+    }
+    
+    public String getFullName() { 
+        return fullName; 
+    }
+}
+
+class Student extends Person {
+    private int studentId;  // changed from 'id'
+    
+    public void setStudentId(int i) { 
+        studentId = i; 
+    }
+    
+    public int getStudentId() { 
+        return studentId; 
+    }
+}
+
+public class Activity5 {
+    public static void main(String[] args) {
+        Student student = new Student(); // changed 's' to 'student'
+        student.setFullName("Alice");
+        student.setStudentId(101);
+        System.out.println("Name: " + student.getFullName() + ", ID: " + student.getStudentId());
+    }
+}
